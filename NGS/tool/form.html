@@ -1,0 +1,112 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>NGS Analysis Tool</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+ <link type="text/css" rel="stylesheet" href="C:/Program Files/Apache Software Foundation/Apache2.2/cgi-bin/style.css"/>
+ </head>
+
+<body>
+
+<!--beginheader-->
+<div class="header">
+	<div class="title1">
+		The <font color=DarkMagenta>NGS</font> Engine<br/>
+	</div>
+	<div class="title2">
+		Discover the hidden</br>
+	</div>	
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>
+<div class="headerlink" >
+			<a style="text-decoration: none;" href="about.html">About the Engine</a><br /><br /><br />
+			<a style="text-decoration: none;" href="instructions.html">Instructions</a><br /><br/><br />
+			<a style="text-decoration: none;" href="form.html">Analysis Tool</a><br /><br/><br />
+			<a style="text-decoration: none;" href="tutorials.html">Tutorials</a><br /><br/><br />	
+			<a style="text-decoration: none;" href="resources.html">Resources</a><br /><br/><br />	
+</div>
+</p>
+<div class="tool">
+<script type="text/javascript">
+
+		function myFunction()
+		{
+			var execBtn = document.createElement("input");
+			execBtn.setAttribute("type", "file");
+			execBtn.setAttribute("id", "execBtn");
+			execBtn.setAttribute("value", "Please choose a file:")
+			execBtn.appendChild(t);
+			document.body.appendChild(btn);
+		};
+
+		function open_xl()
+		{
+			chosen = ""
+			len = document.NGS.r1.length
+
+			for (i = 0; i <len; i++) {
+				if (document.NGS.r1[i].checked) {
+				chosen = document.NGS.r1[i].value
+			}
+			}
+			if (chosen == "") {
+				window.open("C:/Users/inanrat1/Desktop/NGS/Presentation/NGS_Output.xlsx");
+			}
+			if (chosen=="xls") {
+				window.open("C:/Users/inanrat1/Desktop/NGS/Presentation/NGS_Output.xlsx");
+			}
+			else{
+				window.open("C:/Users/inanrat1/Desktop/NGS/Presentation/NGS_Output.pdf");
+			}
+		}
+
+
+	</script>
+<FORM action="http://localhost/cgi-bin/format.pl" method="post" name="NGS">
+  	 <p>
+ 		Enter the name of your dataset: <input type="text" id=name size="28">
+  	 </p>
+  	 <p>
+		Please specify a file:<input type="file" name="datafile" size="30">
+ 	 
+		<button onclick="myFunction()" style="height: 20px; width: 30px"><i>Add</i></font></button>
+	</p>
+	<p>
+		Please specify another file:<input type="file" name="datafile" size="26">
+	</p>
+	
+	  <p>
+	Choose the index genome:
+	<select size="">
+ 		<option>H. sapiens, UCSC hg18</option>
+  		<option selected="selected">H. sapiens, UCSC hg19</option>
+  		<option>E.coli, NCBI</option>
+  		<option>M. musculus, UCSC mm8</option>
+	</select>
+	<br />
+		<font size =2> Not listed? <a href="http://bowtie-bio.sourceforge.net/index.shtml" target="_blank">Create</a> index.</font> 
+	</p>
+	<p>
+	Choose the annotation file:
+	<select>	
+		<option selected="selected">Hg19 gene ontology.tab</option>
+		<option>e_coli gene ontology.tab</option>
+		<option>GeneOntology: Molecular Function</option>
+		</select>
+	</p>
+	<p><b><input type="button" value="Analyze" onclick="open_xl()" style="height: 50px; width: 150px";></b>
+	<Input type = radio Name = r1 Value =xls><font size=3>.xls</font>
+	<Input type = radio Name = r1 Value =pdf><font size=3>.pdf</font>
+	</p>
+	 <input type="reset" value="Reset!">
+	
+	
+</div>
+</body>
+</html>

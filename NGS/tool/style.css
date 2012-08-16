@@ -1,0 +1,390 @@
+body
+    {   /*margin-left: 5%;*/
+        /*margin-right: 5%;*/
+        background-image:url('dna_transparent.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:right;
+	font-family:Arial,Helvetica,sans-serif;
+    }
+
+div.header
+	{	width: 500px;
+		text-align: left;
+	}
+
+div.title1
+	{	/*background: #33CCCC url('ADN_animation.gif') repeat-x bottom;*/
+		/*height: 1px;*/
+		text-align: left;
+		font-size: 300%;
+		font-weight: bold;
+		font-family: Verdana, sans-serif;
+		color:DarkOrchid;
+	}
+div.title2
+	{
+		text-align: left;
+		font-size: 95%;
+		font-weight: bold;
+		font-style:italic;
+		font-family: Verdana, sans-serif;
+		color:DarkOrchid;
+}	
+div.title-small
+	{	background: #33CCCC url('img/bluegradient-small.gif') repeat-x bottom;
+		height: 64px;
+		border-bottom: thin solid #0000FF;
+		
+	}
+
+div.headerlink {
+		color: Red
+		left:400px;
+		top:290px;
+	}
+
+div.tool {
+	text-align:justify;
+	font-weight: 900;
+	font-size: 110%;
+	color: DarkMagenta;
+	position:absolute;
+	left:300px;
+	top:200px;
+	}
+span.logo
+	{	float: left;
+		width: 119px;
+	}
+
+span.logo-small
+	{	float: left;
+		width: 64px;
+	}
+
+span.title
+	{	text-align: left;
+		padding-top: 20px;
+		float: right;
+		width: 1000px;
+	}
+
+span.title-small
+	{	text-align: center;
+		padding-top: 15px;
+		float: right;
+		width: 736px;
+	}
+
+span.titlebold
+	{	font-size: 300%;
+		font-weight: bold;
+		font-family: Verdana, sans-serif;
+		color:DarkOrchid;
+		
+	}
+
+span.mainlink
+	{	color: DarkSlateBlue
+		left:10px;
+		top:150px;
+	}
+	
+span.mainlink:hover
+	{	background: #FFFFCC;
+	}
+
+span.sublink
+	{	height: 30px;
+		min-width: 100px;
+		width: 100px;
+		padding-top: 4px;
+		float: left;
+		font-size: 80%;
+		text-align: center;
+		background: #CCCCFF;
+	}
+
+span.sublink:hover
+	{	background: #FFFFCC;
+	}
+
+div.maincontent
+	{	min-width: 800px;
+		clear: left;
+		border: thin solid #0000FF;
+	}
+
+div.subheader
+	{	float: left;
+		text-align: center;
+		width: 100px;
+		margin: 10px;
+		border: 1px solid #0000FF;
+	}
+
+div.step
+	{
+	}
+
+div.substep1
+	{	float: left;
+		text-align: left;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+	}
+
+div.substep2
+	{	float: right;
+		text-align: left;
+		width: 40%;
+		height: 100%;
+		position: relative;
+	}
+	
+div.middlealign
+	{	position: absolute;
+		bottom: 50%;
+
+	}
+
+div.topic
+	{	text-align: left;
+		margin: 20px;
+		border: thin solid #CCCCFF;
+	}
+
+div.topictitle
+	{	padding: 10px;
+		font-weight: bold;
+		border-bottom: thick solid #CCCCFF;
+	}
+
+p.topictext
+	{	margin-left: 20px;
+		margin-right: 20px;
+		text-indent: 20px;
+		line-height: 1.5em;
+	}
+	
+p.linklist
+	{	margin-left: 40px;
+		line-height: 1.5em;
+	}
+
+div.footer
+	{	clear: left;
+	}
+
+p.heavy
+    {   font-weight: bold;
+    }
+    
+ul.new
+    {   list-style-type: disc;
+        padding: 5px;
+		font-family: Verdana;
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+p.system
+    {   font-weight: bold;
+    	font-family: Verdana;
+    }
+    
+p.code
+    {	font-family: Courier;
+    	text-align: left;
+    	margin-left: 20px;
+		margin-right: 20px;
+    }
+    
+p.small
+	{	font-size: 80%;
+	}
+	
+
+table.results
+    {   border: thin solid #0000FF;
+        margin-bottom: 2px;
+    }
+
+table.matches
+    {   border: thin solid #0000FF;
+    }
+
+tr.resultsnav
+    {   background: #CCCCFF;
+    	border-top: thin solid #0000FF;
+    	border-left: thin solid #0000FF;
+    	border-right: thin solid #0000FF;
+    }
+
+td.empty
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: white;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+
+td.a /*Proliferation, cell cycle and apoptosis*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: green;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.b /*Cellular Transport*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: purple;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.c /*Development*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: orange;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.d /*Stress and Immune Responses*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: black;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.e /*Energy Metabolism*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: green;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.f /*Protein Metabolism*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: blue;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.g /*Transcription and RNA Processing*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: red;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.h /*Cell-cell Signalling and Adhesion*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: gray;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+td.i /*Signal Transduction*/
+    {   height: 20px;
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        background: yellow;
+        text-align: center;
+        color: white;
+        font-size: 130%;
+        font-family: Verdana;
+    }
+
+td.genename
+    {   text-align: left;
+        font-size: 100%;
+        font-family: Verdana;
+        font-weight: 700;
+    }
+    
+td.name
+    {   border-bottom: solid;
+        border-right: solid;
+        border-width: thin;
+        background: white;
+    }    
+
+tr.resultsheading
+    {   background: #CCCCFF;
+    }
+    
+tr.entry
+    {   background: #FFFFCC;
+    }
+    
+td.heading
+    {   border-bottom: solid;
+        border-right: solid;
+        border-width:thin;
+    }    
+
+td.headinggenename
+    {   text-align: left;
+        font-size: 100%;
+        font-family: Verdana;
+        font-weight: 700;
+        border-bottom: solid;
+        border-right: solid;
+        border-width:thin;
+    }      
+    
+td.headingdesc
+    {   border: solid;
+        border-width: thin;
+    }        
+  
+p.desc
+	{	font-size: 80%;
+	}
+	
+tr.platform
+	{	text-align: left;
+		vertical-align: top;
+		width: 33%;
+		font-family: Courier;
+	}		

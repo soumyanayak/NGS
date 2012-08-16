@@ -1,0 +1,236 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>NGS Analysis Tool</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+ <link type="text/css" rel="stylesheet" href="C:/Program Files/Apache Software Foundation/Apache2.2/cgi-bin/style.css"/>
+ </head>
+
+<body>
+
+<!--beginheader-->
+<div class="header">
+	<div class="title1">
+		The <font color=DarkMagenta>NGS</font> Engine<br/>
+	</div>
+	<div class="title2">
+		Discover the hidden</br>
+	</div>	
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>
+<div class="headerlink" >
+			<a style="text-decoration: none;" href="about.html">About the Engine</a><br /><br /><br />
+			<a style="text-decoration: none;" href="instructions.html">Instructions</a><br /><br/><br />
+			<a style="text-decoration: none;" href="form.html">Analysis Tool</a><br /><br/><br />
+			<a style="text-decoration: none;" href="database.html">Tutorials</a><br /><br/><br />	
+			<a style="text-decoration: none;" href="resources.html">Resources</a><br /><br/><br />	
+</div>
+</p>
+<div class="tool">
+<h2><i>Tutorial</i></h2>
+
+Tutorial
+
+
+1.0 Objective
+The objective is to find biomarkers for lung cancer using NGS analysis of RNA sequences.
+1.1 Dataset used
+The Dataset used here is SRP006676 from the SRA Database.
+Data is taken from 4 different types of people.
+    1. Healthy non smokers
+    2. Current Smokers
+    3. Smokers with cancer
+    4. Smokers without cancer
+RNA sequence libraries were prepared using two distinct approaches, one capable of capturing non
+polyadenylated RNA(NUGEN) and the other designed to measure only polyadenylated RNA (Illumina
+protocol). For both the protocol the samples taken were the same. SRA id for each category is as
+follows. And for each SRA id samples were taken from 3 people.
+1.2 Dataset from Illumina protocol:
+       SRR192333:- Healthy non-smokers.
+       SRR192334:-Healthy Smokers
+       SRR192335:-Smokers without lung cancer (these persons does not have lung cancer but
+        some benign form of lung disease)
+       SRR192336:-Smokers with lung cancer.
+1.3 Dataset from Nugen protocol:
+       SRR192337: Healthy non-smokers.
+       SRR192338: Healthy Smokers
+       SRR192339: Smokers without lung cancer (these persons does not have lung cancer but
+        some benign form of lung disease)
+       SRR192340: Smokers with lung cancer.
+2.0 Procedure for analysis
+The procedure for analysis is as follows:
+    1. Downloading the dataset
+    The dataset was downloaded from the SRA (Sequence Read Archive) database of NCBI.
+        1
+2.1 About the database
+NCBI, EBI, and DDBJ, under the auspices of the International Nucleotide Sequence Database
+Collaboration (INSDC), have developed the Sequence Read Archive (SRA) data storage and retrieval
+system. SRA is designed to meet the challenges presented by massively parallel sequencing
+technologies. The SRA not only provides a place where researchers can archive their short read
+data, but also enables them to quickly access known data and their associated experimental
+descriptions (meta data) with pin-point accuracy.
+2.1.1 Read organization in SRA
+NCBI proposes the following accession format for each read:
+SRA000000.ssss.rrr
+ where, 'SRA000000' denotes the sample accession, 'ssss' denotes the “spot” number in the run,
+and 'rrr' denotes the read index within the spot.
+3.0 Converting SRA lite format to FASTQ format.
+The difference between SRA and SRA lite is SRA file is a single file version of SRA's own data storage
+system and contains signal noise and intensity data. We can use the SRA file to convert to SFF,
+Illumina and ABI Solid files.
+A SRA lite file doesn't contain signal noise and intensity data .It can be used to convert into FASTQ
+format which contains only reads and quality scores.
+The downloaded data set is in SRA lite format. It is an encoded format. For our use we have to
+convert it into FASTQ format which we understand.
+For converting it into FASTQ format the command is:
+FASTQ-dump -B -A SRR192335 SRR192335.lite.sra
+cat *.fastq >SRR192335_SWOC.fastq
+A shell script is written to convert all the SRA data to the respective fastq files. The script is
+conv_fastq.sh and is located at
+/home/workshop/soumya/lung_cancer/data/conv_fastq.sh
+If the file is too big then the above command will split the file into two or three files. To combine
+them, the following command can be used:
+        2
+cat *.fastq >SRR192335_SWOC.fastq
+Now the single file SRR192335_SWOC.fastq contains the fastq format of the sra lite file
+corresponding to the dataset SRR192335.
+4.0 Running Bowtie on the dataset to align it to the human genome
+Bowtie is an ultrafast, memory-efficient short read aligner geared toward quickly aligning large sets
+of short DNA sequences (reads) to large genomes. It aligns 35-base-pair reads to the human
+genome at a rate of 25 million reads per hour on a typical workstation.
+We can give various parameters to the bowtie tool regarding our requirement. Here in this case the
+parameters given to bowtie tool are:
+       -best: Running Bowtie in --best mode eliminates strand bias by forcing Bowtie to select one
+        strand or the other with a probability that is proportional to the number of best sites on the
+        strand.
+       -v: In -v mode, alignments may have no more than V mismatches, where V may be a number
+        from 0 through 3 set using the -v option. Here -v is set to 2.
+       -m: Specifying -m 2 instructs bowtie to refrain from reporting any alignments for reads
+        having more than 2 reportable alignments. The -m option is useful when the user would like
+        to guarantee that reported alignments are "unique", for some definition of unique. Here -m
+        is set to 2.
+A script is written to run bowtie in all the datasets and to create the output file which is called the
+map file in one output folder. Here I have given the name of output folder ad Bowtie_lung. The path
+is /home/workshop/soumya/lung_cancer/ Bowtie_lung
+The script is present in /home/workshop/soumya/lung_cancer
+/bowtie_run.sh.
+4.1 Output of bowtie
+Bowtie output files are .map files. An example of .map files is
+SRR192335.7 HWUSI-EAS1671_0001:7:1:1030:18590 length=75 -                          chr11      76262558
+CTATAGTTAATANNTTCCCACTAGAGTGACACTGAAGATTTAAACACAAGCATTCATAAGATGCGCTGATCTCT
+G###############@B;BABBBBBA>C@BBBBC>BAB@CACCBCBCCACCCB<CCBCCCCCBCBCCC@CCC
+C=C 0         61:A>N,62:A>N
+        3
+ The following are the interpretations of the above output:
+        ‘SRR192335.7 HWUSI-EAS1671_0001:7:1:1030:18590 length=75’ indicates the read no and
+         accessory information.
+        ‘-‘ (minus) indicates the strand
+        ‘chr11’ indicates in which ch no this particular read is present.
+        ‘76262558’ indicates the starting index of the read in that particular chromosome.
+        ‘CTATAGTTAATANNTTCCCACTAGAGTGACACTGAAGATTTAAACACAAGCATTCATAAGATGCGCT
+         GATCTCTG’ denotes the actual read.
+        ‘###############@B;BABBBBBA>C@BBBBC>BAB@CACCBCBCCACCCB<CCBCCCCCBCBCCC
+         @CCCC=C’ denotes the quality score.
+        ‘0’ denotes how many times that read map to the genome.
+        ‘61:A>N,62:A>N’ denotes the mismatches.
+ 5.0 Entering the map files to MySQL server.
+ In MySQL a database “lung cancer” was created. In these database tables name chr1-chr22 are
+ created. Also chrX, chrY, chrM are created. The data present in map files are inserted in these tables.
+ The fields present in each table are:
+        sample
+        read_id
+        strand
+        start
+        end
+        seq
+ For example one entry from chr1 is:
+  sample           read_id        strand        start            end                  seq
+   HNS1         SRR192333.47          +      207103170       207103244     NTACCTGTCACAGCATCTAGC
+                                                                           AAAGCACCTGAATTCTAGTAT
+                                                                           GAATTCAAATACATCTTTTGN
+                                                                                 TGGAAGGAAAGA
+Likewise in each table which denotes a chromosome all the reads from all the samples which
+matches to some portions of the chromosome are entered sequentially.
+        4
+The script for entering data into MySQL table is map_sql1.pl. The script is present in
+/home/workshop/soumya/lung_cancer/ map_sql1.pl
+ 6.0 Calculating Reads per gene:
+ The reads per each gene is then calculated. To do so the map file data in above database is
+ compared with the file hg19_geneloci.tab . This file contains the following information.
+         #accession      version     gene geneSymbol protein chr start            end       type
+      #uc001aaa.3 uc001aaa.3 null          null       BZX12 1 14409 15669              knownGene.
+ Comparing this result with our data in MySQL table we can calculate read per gene. The Perl script
+ to      calculate     read     per    gene     is     read_per_gene.pl.      It    is    present    in
+ /home/workshop/soumya/lung_cancer/read per gene.pl
+The output file generated from this script looks like:
+    Acc_ID Chr HNS1 HS1 SWOC1 SWC1 SWC2 HNS2 HS2 SWOC2 SWC2 Gene_Name
+  NR_015368        chr1 256       146    98      166     102    142    86      81 102      LOC643837
+     uc001aar.1       chr1 0        0      0       0       0      0       0      0       0      null
+This file will give the reads per each gene in each sample.
+ 7.0 Calculating RPKM (Reads per Kilobase of exon model per Million mapped
+ reads)
+ Since the depths of all the samples were different we could not compare them directly. Hence, we
+ need to calculate RPKM values for each gene and each sample.
+ The formula to calculate RPKM is
+ RPKM=Total exon reads/ (Mapped reads (millions)*Exon length (Kilobase))
+ The above formula can be explained as follows:
+         Exon Length: To find the exon length, mRNA length column is appended in the read per gene
+          file.
+         Total exon reads: The total exon reads is the actual read per gene generated in the file.
+         Mapped reads (millions): Mapped reads for 1 sample can be found out from stderr file of
+          5
+         bowtie output.
+The mapped reads is divided by 1 million and exon length by 1000 and then RPKM is calculated by
+using the above formula and the output is written to another file. Before calculating the RPKM, the
+read per gene values which were zero in the original file were replaced by 1.
+The code to calculate RPKM is present in /home/workshop/soumya/lung_cancer
+/rpkm7.pl
+After calculating the RPKM, fold change or ratio between any two samples can be calculated in log2
+scale.
+8.0 RESULTS
+8.1 Comparison between two methods
+As there are two types of samples, one capable of capturing non polyadenylated RNA(NUGEN) and
+the other designed to measure only polyadenylated RNA (Illumina protocol), hence, comparison was
+made between both.
+Fold change were calculated between HNS1/HNS2, SWC1/SWC2 and it was observed that many non-
+coding RNAs were captured in Nugen Protocol, i.e. fold change was negative.
+8.2 Comparison between different samples
+Again comparison was made between HNS1/HS1 HNS1/SWC1 HS1/SWC1. Genes which have fold
+change greater than ±2 were taken. All genes which are common in the category HNS1/HS1
+HNS1/SWC1 were taken. The expression values of HS1/SWC1 were analyzed.
+Code for comparing the samples and writing the output to another file is comparision.pl.
+It is present in /home/workshop/soumya/lung_cancer/comparision.pl.
+         6
+Many of them show the following pattern:
+        "Gene_Name"           "HNS1-HS1"          "HNS1-SWC1"      "median"    "HS1-SWC1"
+         "ZFY"                -8.47                   -8.54        -8.5               -0.07
+         "CYorf15B"           -8.22                   -9.07        -8.64              -0.85
+         "SPRR1B"             -7.42                   -8.08        -7.75              -0.65
+         "BCAN"                -6.41                   -5.49        -5.95             0.92
+         "CYorf15A"            -6.23                   -5.4         -5.82             0.84
+         "TTTY15"             -6.17                   -6.8         -6.48              -0.63
+         "RPS4Y1,XGPY2"       -6.13                   -6.84        -6.48              -0.71
+Expression in column "HNS1-HS1 and "HNS1-SWC1 showed more or less similar values of high fold
+change suggesting genes are differentially expressed in both the columns but expression in column
+"HS1-SWC1" shows very less fold change for those genes .It shows that there is very similar
+expression in both the types.
+It suggest that comparing the healthy smoker and smoker with cancer with healthy non-smoker
+some genes which are unregulated or downregulated in cancer are also up regulated or down
+regulated in Healthy Smokers also. So these genes are differentially expressed by smoking.
+Some of the differential expression of these genes may lead to cancer.
+9.0 PATHWAY ANALYSIS
+Pathway analysis for those 280 genes which were common in "HNS1-HS1"and"HNS1-SWC1
+and have fold change greater than +- 2 was done using DAVID software. These 280 genes were kept
+in a file and given to DAVID as a list. The species selected was Homo Sapiens
+
+	
+	
+</div>
+</body>
+</html>

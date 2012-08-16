@@ -1,0 +1,503 @@
+contig_id	Chr	E_coli_1	E_coli_2	Gene/RNA
+husec41_c2045	chr3	0	0	gene
+
+husec41_c624	chr3	0	0	gene
+
+husec41_c419	chr3	0	0	gene
+
+husec41_c549	chr3	0	0	gene
+
+husec41_c966	chr3	0	0	gene
+
+husec41_c1455	chr3	0	0	gene
+
+husec41_c653	chr3	0	0	gene
+
+husec41_c2131	chr3	0	0	gene
+
+husec41_c1182	chr3	0	0	gene
+
+husec41_c390	chr3	0	0	gene
+
+husec41_c1014	chr3	0	0	gene
+
+husec41_c217	chr3	0	0	gene
+
+husec41_c736	chr3	0	0	gene
+
+husec41_c357	chr3	0	0	gene
+
+husec41_c418	chr3	0	0	gene
+
+husec41_c418	chr3	0	0	gene
+
+husec41_c1568	chr3	0	0	gene
+
+husec41_c2156	chr3	0	0	gene
+
+husec41_c758	chr3	0	0	gene
+
+husec41_c861	chr3	0	0	gene
+
+husec41_c935	chr3	0	0	gene
+
+husec41_c960	chr3	0	0	gene
+
+husec41_c2073	chr3	0	0	gene
+
+husec41_c990	chr3	0	0	gene
+
+husec41_c51	chr3	0	0	gene
+
+husec41_c690	chr3	0	0	gene
+
+husec41_c1038	chr3	0	0	gene
+
+husec41_c1124	chr3	0	0	gene
+
+husec41_c316	chr3	0	0	gene
+
+husec41_c316	chr3	0	0	gene
+
+husec41_c1808	chr3	0	0	gene
+
+husec41_c986	chr3	0	0	gene
+
+husec41_c322	chr3	0	0	gene
+
+husec41_c1079	chr3	0	0	gene
+
+husec41_c872	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c499	chr3	0	0	gene
+
+husec41_c439	chr3	0	0	gene
+
+husec41_c2013	chr3	0	0	gene
+
+husec41_c1947	chr3	0	0	gene
+
+husec41_rep_c2374	chr3	0	0	gene
+
+husec41_c1132	chr3	0	0	gene
+
+husec41_c2076	chr3	0	0	gene
+
+husec41_rep_c2477	chr3	0	0	gene
+
+husec41_rep_c2367	chr3	0	0	gene
+
+husec41_c319	chr3	0	0	gene
+
+husec41_c1215	chr3	0	0	gene
+
+husec41_c271	chr3	0	0	gene
+
+husec41_c643	chr3	0	0	gene
+
+husec41_c1499	chr3	0	0	gene
+
+husec41_c648	chr3	0	0	gene
+
+husec41_c1649	chr3	0	0	gene
+
+husec41_c963	chr3	0	0	gene
+
+husec41_c1621	chr3	0	0	gene
+
+husec41_c990	chr3	0	0	gene
+
+husec41_c1593	chr3	0	0	gene
+
+husec41_c1043	chr3	0	0	gene
+
+husec41_c254	chr3	0	0	gene
+
+husec41_c55	chr3	0	0	gene
+
+husec41_c698	chr3	0	0	gene
+
+husec41_c2030	chr3	0	0	gene
+
+husec41_c461	chr3	0	0	gene
+
+husec41_c797	chr3	0	0	gene
+
+husec41_c390	chr3	0	0	gene
+
+husec41_c746	chr3	0	0	gene
+
+husec41_c1037	chr3	0	0	gene
+
+husec41_c2045	chr3	0	0	gene
+
+husec41_c84	chr3	0	0	gene
+
+husec41_c667	chr3	0	0	gene
+
+husec41_c441	chr3	0	0	gene
+
+husec41_c1953	chr3	0	0	gene
+
+husec41_c564	chr3	0	0	gene
+
+husec41_c1798	chr3	0	0	gene
+
+husec41_c735	chr3	0	0	gene
+
+husec41_c452	chr3	0	0	gene
+
+husec41_c84	chr3	0	0	gene
+
+husec41_c634	chr3	0	0	gene
+
+husec41_c1264	chr3	0	0	gene
+
+husec41_c169	chr3	0	0	gene
+
+husec41_c381	chr3	0	0	gene
+
+husec41_c479	chr3	0	0	gene
+
+husec41_c736	chr3	0	0	gene
+
+husec41_c293	chr3	0	0	gene
+
+husec41_c543	chr3	0	0	gene
+
+husec41_c564	chr3	0	0	gene
+
+husec41_c1108	chr3	0	0	gene
+
+husec41_c488	chr3	0	0	gene
+
+husec41_c746	chr3	0	0	gene
+
+husec41_c372	chr3	0	0	gene
+
+husec41_c795	chr3	0	0	gene
+
+husec41_c1050	chr3	0	0	gene
+
+husec41_c694	chr3	0	0	gene
+
+husec41_c694	chr3	0	0	gene
+
+husec41_c50	chr3	0	0	gene
+
+husec41_c1008	chr3	0	0	gene
+
+husec41_c877	chr3	0	0	gene
+
+husec41_c736	chr3	0	0	gene
+
+husec41_c20	chr3	0	0	gene
+
+husec41_c644	chr3	0	0	gene
+
+husec41_c648	chr3	0	0	gene
+
+husec41_c1150	chr3	0	0	gene
+
+husec41_c1150	chr3	0	0	gene
+
+husec41_c489	chr3	0	0	gene
+
+husec41_c36	chr3	0	0	gene
+
+husec41_c1070	chr3	0	0	gene
+
+husec41_c669	chr3	0	0	gene
+
+husec41_c669	chr3	0	0	gene
+
+husec41_c216	chr3	0	0	gene
+
+husec41_c456	chr3	0	0	gene
+
+husec41_c418	chr3	0	0	gene
+
+husec41_c1681	chr3	0	0	gene
+
+husec41_c1049	chr3	0	0	gene
+
+husec41_c450	chr3	0	0	gene
+
+husec41_c872	chr3	0	0	gene
+
+husec41_c828	chr3	0	0	gene
+
+husec41_c1181	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c761	chr3	0	0	gene
+
+husec41_c253	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c1394	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c1053	chr3	0	0	gene
+
+husec41_c70	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c828	chr3	0	0	gene
+
+husec41_c1110	chr3	0	0	gene
+
+husec41_c31	chr3	0	0	gene
+
+husec41_c108	chr3	0	0	gene
+
+husec41_c649	chr3	0	0	gene
+
+husec41_c440	chr3	0	0	gene
+
+husec41_c440	chr3	0	0	gene
+
+husec41_c222	chr3	0	0	gene
+
+husec41_c687	chr3	0	0	gene
+
+husec41_c391	chr3	0	0	gene
+
+husec41_c34	chr3	0	0	gene
+
+husec41_c433	chr3	0	0	gene
+
+husec41_c20	chr3	0	0	gene
+
+husec41_c20	chr3	0	0	gene
+
+husec41_c20	chr3	0	0	gene
+
+husec41_c105	chr3	0	0	gene
+
+husec41_c4	chr3	0	0	gene
+
+husec41_c1110	chr3	0	0	gene
+
+husec41_c420	chr3	0	0	gene
+
+husec41_c1720	chr3	0	0	gene
+
+husec41_c1035	chr3	0	0	gene
+
+husec41_c421	chr3	0	0	gene
+
+husec41_c482	chr3	0	0	gene
+
+husec41_c105	chr3	0	0	gene
+
+husec41_c801	chr3	0	0	gene
+
+husec41_c1038	chr3	0	0	gene
+
+husec41_c295	chr3	0	0	gene
+
+husec41_c949	chr3	0	0	gene
+
+husec41_c949	chr3	0	0	gene
+
+husec41_c1280	chr3	0	0	gene
+
+husec41_c949	chr3	0	0	gene
+
+husec41_c786	chr3	0	0	gene
+
+husec41_c758	chr3	0	0	gene
+
+husec41_c566	chr3	0	0	gene
+
+husec41_c220	chr3	0	0	gene
+
+husec41_c1145	chr3	0	0	gene
+
+husec41_c801	chr3	0	0	gene
+
+husec41_c1142	chr3	0	0	gene
+
+husec41_c877	chr3	0	0	gene
+
+husec41_c50	chr3	0	0	gene
+
+husec41_c135	chr3	0	0	gene
+
+husec41_c212	chr3	0	0	gene
+
+husec41_c1190	chr3	0	0	gene
+
+husec41_c641	chr3	0	0	gene
+
+husec41_c1330	chr3	0	0	gene
+
+husec41_c908	chr3	0	0	gene
+
+husec41_c425	chr3	0	0	gene
+
+husec41_c600	chr3	0	0	gene
+
+husec41_c703	chr3	0	0	gene
+
+husec41_c974	chr3	0	0	gene
+
+husec41_c1079	chr3	0	0	gene
+
+husec41_c108	chr3	0	0	gene
+
+husec41_c1181	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c828	chr3	0	0	gene
+
+husec41_c1181	chr3	0	0	gene
+
+husec41_c466	chr3	0	0	gene
+
+husec41_c286	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c34	chr3	0	0	gene
+
+husec41_c618	chr3	0	0	gene
+
+husec41_c1341	chr3	0	0	gene
+
+husec41_c286	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c131	chr3	0	0	gene
+
+husec41_c613	chr3	0	0	gene
+
+husec41_c1075	chr3	0	0	gene
+
+husec41_c347	chr3	0	0	gene
+
+husec41_c251	chr3	0	0	gene
+
+husec41_c351	chr3	0	0	gene
+
+husec41_c65	chr3	0	0	gene
+
+husec41_c735	chr3	0	0	gene
+
+husec41_c1850	chr3	0	0	gene
+
+husec41_c957	chr3	0	0	gene
+
+husec41_c198	chr3	0	0	gene
+
+husec41_c354	chr3	0	0	gene
+
+husec41_c157	chr3	0	0	gene
+
+husec41_c676	chr3	0	0	gene
+
+husec41_c515	chr3	0	0	gene
+
+husec41_c1309	chr3	0	0	gene
+
+husec41_c152	chr3	0	0	gene
+
+husec41_c557	chr3	0	0	gene
+
+husec41_c235	chr3	0	0	gene
+
+husec41_c68	chr3	0	0	gene
+
+husec41_c1644	chr3	0	0	gene
+
+husec41_c1064	chr3	0	0	gene
+
+husec41_c235	chr3	0	0	gene
+
+husec41_c1132	chr3	0	0	gene
+
+husec41_c1827	chr3	0	0	gene
+
+husec41_c1703	chr3	0	0	gene
+
+husec41_c2211	chr3	0	0	gene
+
+husec41_c375	chr3	0	0	gene
+
+husec41_c1221	chr3	0	0	gene
+
+husec41_c177	chr3	0	0	gene
+
+husec41_c102	chr3	0	0	gene
+
+husec41_c1190	chr3	0	0	gene
+
+husec41_c230	chr3	0	0	gene
+
+husec41_c214	chr3	0	0	gene
+
+husec41_c364	chr3	0	0	gene
+
+husec41_c475	chr3	0	0	gene
+
+husec41_c214	chr3	0	0	gene
+
+husec41_c364	chr3	0	0	gene
+
+husec41_c475	chr3	0	0	gene
+
+husec41_c1593	chr3	0	0	gene
+
+husec41_c1693	chr3	0	0	gene
+
+husec41_c977	chr3	0	0	gene
+
+husec41_c482	chr3	0	0	gene
+
+husec41_c1536	chr3	0	0	gene
+
+husec41_c398	chr3	0	0	gene
+
+husec41_c126	chr3	0	0	gene
+
+husec41_c701	chr3	0	0	gene
+
+husec41_c755	chr3	0	0	gene
+
+husec41_c296	chr3	0	0	gene
+
+husec41_c296	chr3	0	0	gene
+
+husec41_c1149	chr3	0	0	gene
+
+husec41_c968	chr3	0	0	gene
+
+husec41_c661	chr3	0	0	gene
+
+husec41_c738	chr3	0	0	gene
+
+husec41_c227	chr3	0	0	gene
+
+husec41_c1222	chr3	0	0	gene
+
+husec41_c1847	chr3	0	0	gene
+
+husec41_c635	chr3	0	0	gene
+
+husec41_c901	chr3	0	0	gene
+
+husec41_c742	chr3	0	0	gene
+
+husec41_c907	chr3	0	0	gene
+
+hus	chr3	0	0	
+

@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>NGS Analysis Tool</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+ <link type="text/css" rel="stylesheet" href="C:/Program Files/Apache Software Foundation/Apache2.2/cgi-bin/style.css"/>
+ </head>
+
+<body>
+
+<!--beginheader-->
+<div class="header">
+	<div class="title1">
+		The <font color=DarkMagenta>NGS</font> Engine<br/>
+	</div>
+	<div class="title2">
+		Discover the hidden</br>
+	</div>	
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>
+<div class="headerlink" >
+			<a style="text-decoration: none;" href="about.html">About the Engine</a><br /><br /><br />
+			<a style="text-decoration: none;" href="instructions.html">Instructions</a><br /><br/><br />
+			<a style="text-decoration: none;" href="form.html">Analysis Tool</a><br /><br/><br />
+			<a style="text-decoration: none;" href="tutorials.html">Tutorials</a><br /><br/><br />	
+			<a style="text-decoration: none;" href="resources.html">Resources</a><br /><br/><br />	
+</div>
+</p>
+<div class="tool">
+<h2><i>Instructions</i></h2>
+
+To analyze your data you need to go through 4 simple steps<br/><br/>
+
+Step 1:Enter the name of your dataset<br/><br/>
+
+The name specified here will be used to store the dataset in mysql server. 
+This name is the database name in server<br/><br/>
+
+
+Step 2:Please specify a file:<br/><br/>
+
+Here give the input datasets.
+Single file can be choosen one after another or 
+all the file names can be summerized in one file and that file name can choosen.
+This input file should be in fastq format.If your file is in SRA or SRA lite format
+then click here to see how to convert to fastq file.<br/><br/>
+
+link:http://www.ncbi.nlm.nih.gov/books/NBK47540/#SRA_Download_Guid_B.Using_SRA_Data
+
+Step 3:Choose the index genome:<br/><br/>
+
+Here choose the index genome with which the given reads has to be aligned.
+If that genome is not listed then click on index genome to create that genome
+from the bowtie home page.<br/><br/>
+
+Step 4:<br/><br/>
+Here gene annotation file has to be choosen.This file should contain all the annotated 
+genes of the reference genome along with its start and end point.Then press submit.
+The tool outputs the reads per each gene for every sample given to analyzed.<br/><br/>
+	
+	
+</div>
+</body>
+</html>
